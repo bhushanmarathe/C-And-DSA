@@ -1,0 +1,1 @@
+if (i > (str.length() + 1) / 2)
