@@ -52,26 +52,26 @@
 
 using namespace std;
 
-// void kLargestElementUsingPriorityQueue(vector<int> arr, int k)
-// {
-//     priority_queue<int, vector<int>, greater<int>> maxHeap;
+void kLargestElementUsingPriorityQueue(vector<int> arr, int k)
+{
+    priority_queue<int, vector<int>, greater<int>> maxHeap;
 
-//     for (int i = 0; i < arr.size(); i++)
-//     {
-//         maxHeap.push(arr[i]);
+    for (int i = 0; i < arr.size(); i++)
+    {
+        maxHeap.push(arr[i]);
 
-//         if (maxHeap.size() > k)
-//         {
-//             maxHeap.pop();
-//         }
-//     }
+        if (maxHeap.size() > k)
+        {
+            maxHeap.pop();
+        }
+    }
 
-//     while (!maxHeap.empty())
-//     {
-//         cout << maxHeap.top() << " ";
-//         maxHeap.pop();
-//     }
-// }
+    while (!maxHeap.empty())
+    {
+        cout << maxHeap.top() << " ";
+        maxHeap.pop();
+    }
+}
 
 /*int element(vector<int> &arr, int &k)
 {
@@ -133,26 +133,18 @@ using namespace std;
 
 int main()
 {
-    // vector<int> arr = {11, 3, 2, 1, 15, 5, 4, 45, 88, 96, 50, 45};
-    // int k = 3;
+    vector<int> arr = {11, 3, 2, 1, 15, 5, 4, 45, 88, 96, 50, 45};
+    int k = 3;
 
-    // // int ans = element(arr, k);
+    // int ans = element(arr, k);
 
-    // // for (int i = 0; i < arr.size(); i++)
-    // // {
-    // //     if (arr[i] > ans)
-    // //     {
-    // //         cout << arr[i] << " ";
-    // //     }
-    // // }
+    // for (int i = 0; i < arr.size(); i++)
+    // {
+    //     if (arr[i] > ans)
+    //     {
+    //         cout << arr[i] << " ";
+    //     }
+    // }
 
-    // kLargestElementUsingPriorityQueue(arr, k);
-
-    string strs[] = [ "flower", "flow", "flight" ];
-
-    for (int i = 0; i < strs->length(); i++)
-    {
-        cout << strs[i] << endl;
-    }
-    return 0;
+    kLargestElementUsingPriorityQueue(arr, k);
 }
